@@ -378,7 +378,7 @@
         </div>
       </section>
       <!-- Modal -->
-      <div class="backdrop" data-modal>
+      <div class="backdrop is-hidden" data-modal>
         <div class="modal">
           <button class="btn-modal" type="button" data-modal-close>
             <svg class="close-icon" width="18px" height="18px">
@@ -396,6 +396,7 @@
                   class="modal-input"
                   name="user-name"
                   id="user-name"
+                  autofocus
                 />
                 <svg class="input-icon">
                   <use href="./images/icons.svg#icon-input-name-icon"></use>
@@ -436,11 +437,26 @@
               <label for="user-comment" class="modal-label">Коментар</label>
               <textarea
                 class="modal-text"
-                placeholder="введіть текст"
                 id="user-comment"
                 name="user-comment"
+                placeholder="Введіть текст"
+              ></textarea>
+            </div>
+            <div class="check-field">
+              <input
+                type="checkbox"
+                class="input-check visually-hidden"
+                name="privacy"
+                id="privacy"
+                value="check"
+              />
+              <label for="privacy" class="check"
+                >Погоджуюся з розсилкою та приймаю
+                <a href=" " class="rules">Умови договору</a></label
               >
-              </textarea>
+            </div>
+            <div class="btn-form">
+              <button type="submit" class="modal-btn">Відправити</button>
             </div>
           </form>
         </div>
@@ -512,6 +528,25 @@
             </li>
           </ul>
         </div>
+
+        <form class="sign">
+          <div class="sign-contacts">
+            <label for="sign-email" class="sign-label"
+              >Підпишіться на розсилку</label
+            >
+            <div class="sign-wrap">
+              <input
+                class="sign-input"
+                type="email"
+                name="sign-email"
+                id="sign-email"
+              />
+            </div>
+          </div>
+          <div class="sign-button-form">
+            <button type="submit" class="sign-bет">підписатися</button>
+          </div>
+        </form>
       </div>
     </footer>
     <script src="./js/modal.js"></script>
