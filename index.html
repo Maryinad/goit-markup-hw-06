@@ -531,24 +531,24 @@
           </ul>
         </div>
 
-        <form class="sign">
-          <div class="sign-contacts">
-            <label for="sign-email" class="sign-label"
-              >Підпишіться на розсилку</label
-            >
-            <div class="sign-wrap">
-              <input
-                class="sign-input"
-                type="email"
-                name="sign-email"
-                id="sign-email"
-              />
+        <div class="footer-sign">
+          <p class="footer-sign-title">Підпишіться на розсилку</p>
+          <form class="footer-sign-form">
+            <input
+              type="email"
+              class="footer-sign-input"
+              placeholder="E-mail"
+            />
+            <div class="btn-wrap">
+              <button class="footer-sign-btn" type="submit">
+                Підписатися
+                <svg class="footer-sign-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
             </div>
-          </div>
-          <div class="sign-button-form">
-            <button type="submit" class="sign-bет">підписатися</button>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
     </footer>
     <script src="./js/modal.js"></script>
