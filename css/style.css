@@ -7,10 +7,6 @@
 /* футер текст контактов rgba(255, 255, 255, 0.6) */
 /* вторая часть лого в хедере #000000 */
 /* Иконки в карточке команда */
-/* Cubic */
-/* время для плавного перехода */
-/* модал текст */
-/* обводка для формы модалки */
 
 :root {
   --primery-text-color: #757575;
@@ -81,7 +77,9 @@ header {
 footer {
   background-color: var(--accent-background-color);
 }
-
+.list {
+  list-style: none;
+}
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -103,6 +101,10 @@ footer {
 }
 
 /*----------HEADER------------------*/
+
+header {
+  border-bottom: 1px solid #ececec;
+}
 
 .header-container {
   display: flex;
@@ -146,10 +148,6 @@ footer {
 
 .header-logopart {
   color: var(--header-logopart);
-}
-
-.list {
-  list-style: none;
 }
 
 .link-nav {
@@ -377,9 +375,6 @@ footer {
   margin-top: 16px;
 }
 
-.icon-list {
-}
-
 .icon-item {
   width: 44px;
   height: 44px;
@@ -409,6 +404,7 @@ footer {
 footer {
   padding-top: 60px;
   padding-bottom: 60px;
+  background-color: var(--accent-background-color);
 }
 
 .logo .footer-container {
@@ -831,6 +827,8 @@ input {
   background-size: auto;
   background-image: url(../images/check.svg);
 }
+
+/* ---------FOOTER SIGN UP---------------- */
 
 .sign-button-form {
   display: flex;
