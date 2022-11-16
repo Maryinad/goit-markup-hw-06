@@ -738,6 +738,8 @@ input {
   border: 1px solid var(--modal-border);
   border-radius: 4px;
   transition: border-color 250ms var(--cubic);
+  color: var(--primery-text-color);
+  outline: none;
 }
 
 .modal-input:hover,
@@ -770,6 +772,8 @@ input {
   resize: none;
   transition: color 250ms var(--cubic);
   padding: 12px 16px;
+  color: var(--primery-text-color);
+  outline: none;
 }
 
 .btn-form {
@@ -806,14 +810,16 @@ input {
   margin-top: 20px;
   margin-bottom: 30px;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .check::before {
   content: "";
   width: 16px;
   height: 15px;
-  border: 1px solid var(--header-logopart);
-  border-radius: 1px;
+  border: 2px solid var(--header-logopart);
+  border-radius: 3px;
   margin-right: 8px;
 }
 
@@ -853,13 +859,15 @@ input {
 }
 .footer-sign-input {
   width: 358px;
-  height: 59px;
+  height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: inherit;
   padding-left: 16px;
   display: inline-block;
+  color: var(--primery-white-color);
+  outline: none;
 }
 
 .footer-sign-btn {
