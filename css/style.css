@@ -159,6 +159,7 @@ footer {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  transition: color var(--time) var(--cubic);
 }
 
 .header-item {
@@ -608,8 +609,6 @@ address {
   gap: 10px;
   align-items: center;
   justify-content: center;
-  /* margin: 0;
-  padding: 0; */
 }
 /*
 .add-item:not(:last-child) {
@@ -642,7 +641,7 @@ address {
 
 .footer-container {
   display: flex;
-  align-items: center;
+  align-items: baseline;
 }
 
 /* --------MODAL---------------- */
@@ -760,8 +759,6 @@ input {
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
-  padding-top: 12px;
-  padding-left: 16px;
   transition: color 250ms var(--cubic);
 }
 
@@ -772,6 +769,7 @@ input {
   border-radius: 4px;
   resize: none;
   transition: color 250ms var(--cubic);
+  padding: 12px 16px;
 }
 
 .btn-form {
